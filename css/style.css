@@ -52,15 +52,17 @@ li a{
     display: flex;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 69px;
 }
 
 .half-width{
     width: 100%;
-    margin-right: 5%;
+    /* margin-right: 5%; */
 
 }
 .half-width img{
-    width: 80%;
+    Width: 440px;
+    Height: 414px;
     padding: 0 105px;
 }
 
@@ -87,4 +89,189 @@ h1{
     font-size: 16px;
     padding: 10px 24px;
     border-radius: 40px;
+}
+
+
+/* logo section  */
+.hero-logo{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+hr{
+    border-top: 1px solid #AAAAAA;
+    margin: 35px 0;
+}
+
+
+/* populer style  */
+
+.thumbnail img {
+    width: 100%;
+}
+h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+}
+
+.populer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px 50px;
+}
+
+.collection{
+    background: #FFFFFF;
+    width: 339px;
+    height: 496px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 10px;
+}
+.thumbnail{
+    margin-bottom: 15px;
+}
+h3{
+    font-size: 28px;
+}
+.tittle-opacity{
+    font-size: 24px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.star-icon{
+    color: #FB8200;
+    font-size: 12px;
+}
+
+.stars{
+    color: #5E6366;
+    font-size: 14px;
+}
+
+.popular-info{
+    color: #787885;
+    font-size: 14px;
+}
+.tittles{
+    font-size: 28px;
+    color: #18191F;
+    
+}
+
+.tittle{
+    font-size: 28px;
+    color: #3A3A3A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.see-more{
+    text-align: end;
+    padding-right: 120px;
+}
+.see-more a{
+    color: #E02C6D;
+}
+
+.freature{
+    display: flex;
+    margin-top: 90px;
+}
+
+.features-details{
+    margin-left: 95px;
+    align-self: center;
+}
+
+.features-details h2{
+    font-size: 38px;
+    color: #0A0826;
+}
+
+.features-details p{
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-bottom: 30px;
+}
+
+
+.footer-section{
+    background-color: #0A0826;
+    color: white;
+}
+.footer{
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+
+.footer-icon{
+    padding: 0 10px;
+}
+@media screen and (max-width:767px) {
+    .container{
+        width: 100%;
+    }
+    header{
+        display: none;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .half-width img{
+       
+        Width:202px;
+        Height:190px;
+
+    }
+    .half-width{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .primary-btn{
+        margin-top: 20px;
+    }
+   
+    
+    .hero-logo{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+        text-align: center;
+    }
+    .populer{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        padding: 0;
+        margin: 3%;
+        align-items: center;
+    }
+    .freature{
+        flex-direction: column-reverse;
+        padding: 20px;
+        text-align: center;
+    }
+
+
+
+    .frature-img img{
+        width: 299px;
+        height: 188px;
+    }
+
+    .features-details h2{
+        font-size: 28px;
+    }
+
+    .features-details{
+        margin-left: 0;
+        align-self: flex-start;
+    }
 }
